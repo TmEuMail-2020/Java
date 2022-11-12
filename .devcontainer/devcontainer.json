@@ -2,20 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/java
 {
 	"name": "Java",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			// Update the VARIANT arg to pick a Java version: 11, 17
-			// Append -bullseye or -buster to pin to an OS version.
-			// Use the -bullseye variants on local arm64/Apple Silicon.
-			"VARIANT": "17-bullseye",
-			// Options
-			"INSTALL_MAVEN": "true",
-			"INSTALL_GRADLE": "true",
-			"NODE_VERSION": "lts/*"
-		}
-	},
-
+	"image": "tmy2017/gitpod-pstorm-with-php71-mysql8:ver-1663427045",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
